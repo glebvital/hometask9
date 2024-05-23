@@ -100,7 +100,7 @@ public class Main {
         return a;
     }
     public static Map<String, Integer> Q5() {
-        String text = "Hello world Hello people Hello world planet Hello";
+        String text = "Hello old world hello world Mercurius hEllo";
         String[] words = text.split(" ");
         HashMap<String,Integer> hashMap = new HashMap<>();
         ArrayList<String> arrayList = new ArrayList<>();
