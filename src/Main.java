@@ -102,14 +102,14 @@ public class Main {
     public static Map<String, Integer> Q5() {
         String text = "Hello old world hello world Mercurius hEllo";
         String[] words = text.split(" ");
-        HashMap<String,Integer> hashMap = new HashMap<>();
-        ArrayList<String> arrayList = new ArrayList<>();
+        HashMap<String,Integer> a = new HashMap<>();
+        ArrayList<String> list = new ArrayList<>();
         for (String words1 : words) {
-            arrayList.add(words1);
+            list.add(words1);
         }
-        for (String words1 : arrayList) {
-            hashMap.put(words1, hashMap.getOrDefault(words1, 0) + 1);
+        for (String words1 : list) {
+            a.put(words1, a.getOrDefault(words1, 0) + 1);
         }
-        return hashMap;
+        return a;
     }
 }
