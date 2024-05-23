@@ -60,14 +60,12 @@ public class Main {
 //        }
 
 //        Q5
-//        String text = "that's a text for function that will tell all words in this text";
-//        int words = text.split("\\s").length;
-
-//        if (words == 1){
-//            System.out.println(words+" word detected in text");
-//        }else{
-//            System.out.println(words+" words detected in text");
+//        Map<String,Integer> b = Q5();
+//        for (Map.Entry<String,Integer> entry : b.entrySet()) {
+//            System.out.println("word/s "+entry.getKey()+" was "+entry.getValue()+" times");
 //        }
+
+
 
     }
     public static boolean Q2 (String a){
@@ -101,5 +99,17 @@ public class Main {
         }
         return a;
     }
-
+    public static Map<String, Integer> Q5() {
+        String text = "Hello world Hello people Hello world planet Hello";
+        String[] words = text.split(" ");
+        HashMap<String,Integer> hashMap = new HashMap<>();
+        ArrayList<String> arrayList = new ArrayList<>();
+        for (String words1 : words) {
+            arrayList.add(words1);
+        }
+        for (String words1 : arrayList) {
+            hashMap.put(words1, hashMap.getOrDefault(words1, 0) + 1);
+        }
+        return hashMap;
+    }
 }
